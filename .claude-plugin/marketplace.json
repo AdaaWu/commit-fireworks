@@ -1,0 +1,5 @@
+{
+  "name": "commit-fireworks",
+  "owner": { "name": "AdaaWu" },
+  "plugins": [{ "name": "commit-fireworks", "source": "./" }]
+}

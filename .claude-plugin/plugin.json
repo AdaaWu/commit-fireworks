@@ -1,0 +1,10 @@
+{
+  "name": "commit-fireworks",
+  "version": "0.1.0",
+  "description": "Text fireworks above the prompt after each successful git commit",
+  "types": "./types/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "AdaaWu"
+  }
+}
