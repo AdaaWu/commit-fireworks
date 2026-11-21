@@ -1,6 +1,6 @@
 # commit-fireworks
 
-每當 Claude 執行 `git commit` 且成功，就在提示列上方放一發文字煙火的 Claude Code mod。
+Claude 每新增一個 commit，就在提示列上方放一發文字煙火的 Claude Code mod。
 
 ![12 發煙火](docs/fireworks.gif)
 
@@ -8,6 +8,7 @@
 
 ## 特色
 
+- 一次指令新增幾個 commit 就放幾發，每發間隔 250ms 依序升空；後續步驟（例如 `git push`）失敗也照放
 - 每發煙火的位置、大小、雙色配色、樣式都隨機，樣式有牡丹、菊花、垂柳、雙環 4 種
 - 小顆約 3 秒，大顆最長約 8 秒
 - 所有煙火共用一個每 80ms 重繪的動畫迴圈，同時最多 12 發；全部消失後迴圈停止，畫面還原
@@ -38,10 +39,11 @@ claude plugin install commit-fireworks --marketplace AdaaWu/commit-fireworks
 
 # commit-fireworks (English)
 
-A Claude Code mod that launches text fireworks above the prompt every time Claude runs a successful `git commit`.
+A Claude Code mod that launches one text firework above the prompt for every new commit Claude makes.
 
 ## Features
 
+- One command that makes several commits launches one firework per commit, 250 ms apart, even when a later step such as `git push` fails
 - Each firework has a random position, size, color pair and style (peony, chrysanthemum, willow, ring)
 - Small fireworks last about 3 seconds, large ones up to 8 seconds
 - All fireworks share one 80 ms animation loop, at most 12 at a time; the loop stops and the screen is restored once the last one fades
